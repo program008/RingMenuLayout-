@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+       <!-- <com.hczh.carownercoming.other.utils.GridViewForScrollView
+            android:id="@+id/home_car_accidents_confirm_baoan_gv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:numColumns="2" />-->
+        <FrameLayout
+            android:id="@+id/home_car_accidents_confirm_baoan_fl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"></FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="报案车辆"
+                android:textColor="@color/deepskyblue"
+                android:textStyle="bold"
+                android:padding="10dp"
+                android:layout_gravity="center_vertical"/>
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape_take_picture_duty_baoan_car_edit_bg"
+                android:hint="贵A*****"
+                android:textSize="12sp"
+                android:layout_gravity="center_vertical"
+                android:padding="5dp"
+                android:focusable="false"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <TextView
+                android:id="@+id/home_car_accidents_confirm_baoan_duty1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/selector_take_picture_btn"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="单方责任"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/home_car_accidents_confirm_baoan_duty2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/selector_take_picture_btn"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="双方责任"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/home_car_accidents_confirm_baoan_duty3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/selector_take_picture_btn"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="责任不明确"
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+        <View style="@style/public_gray_horizontal_line" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/postion1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:text="添加位置" />
+        </LinearLayout>
+
+        <View style="@style/public_gray_horizontal_line" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/selector_take_picture_btn"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="确认报案"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:layout_marginBottom="40dp"/>
+    </LinearLayout>
+</ScrollView>

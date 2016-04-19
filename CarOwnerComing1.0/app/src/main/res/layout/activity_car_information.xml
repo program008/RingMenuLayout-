@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:padding="10dp"
+            android:text="车主姓名"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <View style="@style/public_gray_horizontal_line3" />
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:background="@color/white"
+            android:hint="车主姓名(请填入真实姓名)"
+            android:padding="10dp"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <View style="@style/public_gray_horizontal_line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:padding="10dp"
+            android:text="身份证号"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <View style="@style/public_gray_horizontal_line3" />
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:background="@color/white"
+            android:hint="身份证号"
+            android:padding="10dp"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <View style="@style/public_gray_horizontal_line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:padding="10dp"
+            android:text="车牌号"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <View style="@style/public_gray_horizontal_line3" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="贵"
+                android:textColor="@color/blue"
+                android:textSize="16sp" />
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:background="@color/white"
+                android:hint="身份证号"
+                android:padding="10dp"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+    <View style="@style/public_gray_horizontal_line" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_weight="2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="用户类型"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/black"
+            android:padding="10dp"
+            android:textSize="18sp"/>
+        <View
+            style="@style/public_gray_horizontal_line3"
+            />
+        <LinearLayout
+            android:layout_weight="3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <RadioGroup
+                android:id="@+id/car_information_user_type_rg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="续保用户"/>
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="未上牌"/>
+            </RadioGroup>
+        </LinearLayout>
+    </LinearLayout>
+    <View style="@style/public_gray_horizontal_line"/>
+    <TextView
+        android:id="@+id/car_information_next_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:background="@drawable/shape_home_car_information_next_bg"
+        android:text="下一步"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        />
+</LinearLayout>

@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">车主驾到</string>
+    <string name="action_settings">博客地址</string>
+    <string name="hello_world">Hello world!</string>
+</resources>
